@@ -3,6 +3,7 @@ import 'tasks/task1_hello_world.dart';
 import 'tasks/task2_button_press.dart';
 import 'tasks/task3_listview.dart';
 import 'tasks/task4_text_styles.dart';
+import 'tasks/task5_navigation.dart';
 
 void main() {
   runApp(MyApp());
@@ -68,6 +69,16 @@ class TaskSelectionScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Task4TextStyles()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 5: Navigation'),
+            subtitle: Text('Navigate between two screens'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task5FirstScreen()),
               );
             },
           ),
