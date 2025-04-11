@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'tasks/task1_hello_world.dart';
 import 'tasks/task2_button_press.dart';
+import 'tasks/task3_listview.dart';
 
 void main() {
   runApp(MyApp());
@@ -46,6 +47,16 @@ class TaskSelectionScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Task2ButtonPress()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 3: ListView'),
+            subtitle: Text('Display list of numbered items'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task3ListView()),
               );
             },
           ),
