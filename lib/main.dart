@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'tasks/task1_hello_world.dart';
 import 'tasks/task2_button_press.dart';
 import 'tasks/task3_listview.dart';
+import 'tasks/task4_text_styles.dart';
 
 void main() {
   runApp(MyApp());
@@ -57,6 +58,16 @@ class TaskSelectionScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Task3ListView()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 4: Text Styles'),
+            subtitle: Text('Show different text styles'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task4TextStyles()),
               );
             },
           ),
