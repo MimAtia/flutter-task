@@ -4,6 +4,7 @@ import 'tasks/task2_button_press.dart';
 import 'tasks/task3_listview.dart';
 import 'tasks/task4_text_styles.dart';
 import 'tasks/task5_navigation.dart';
+import 'tasks/task6_login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,7 +35,6 @@ class TaskSelectionScreen extends StatelessWidget {
         children: [
           ListTile(
             title: Text('Task 1: Hello World'),
-            subtitle: Text('Display Hello World with custom styling'),
             onTap: () {
               Navigator.push(
                 context,
@@ -44,7 +44,6 @@ class TaskSelectionScreen extends StatelessWidget {
           ),
           ListTile(
             title: Text('Task 2: Button Press'),
-            subtitle: Text('Change text on button press'),
             onTap: () {
               Navigator.push(
                 context,
@@ -54,7 +53,6 @@ class TaskSelectionScreen extends StatelessWidget {
           ),
           ListTile(
             title: Text('Task 3: ListView'),
-            subtitle: Text('Display list of numbered items'),
             onTap: () {
               Navigator.push(
                 context,
@@ -64,7 +62,6 @@ class TaskSelectionScreen extends StatelessWidget {
           ),
           ListTile(
             title: Text('Task 4: Text Styles'),
-            subtitle: Text('Show different text styles'),
             onTap: () {
               Navigator.push(
                 context,
@@ -74,11 +71,19 @@ class TaskSelectionScreen extends StatelessWidget {
           ),
           ListTile(
             title: Text('Task 5: Navigation'),
-            subtitle: Text('Navigate between two screens'),
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Task5FirstScreen()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 6: Login Screen'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task6LoginScreen()),
               );
             },
           ),
