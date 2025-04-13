@@ -5,12 +5,15 @@ import 'tasks/task3_listview.dart';
 import 'tasks/task4_text_styles.dart';
 import 'tasks/task5_navigation.dart';
 import 'tasks/task6_login_screen.dart';
+import 'tasks/task7_image_grid.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,6 +28,8 @@ class MyApp extends StatelessWidget {
 }
 
 class TaskSelectionScreen extends StatelessWidget {
+  const TaskSelectionScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,6 +89,15 @@ class TaskSelectionScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Task6LoginScreen()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 7: Image Grid'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task7ImageGrid()),
               );
             },
           ),

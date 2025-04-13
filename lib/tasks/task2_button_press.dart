@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Task2ButtonPress extends StatefulWidget {
+  const Task2ButtonPress({super.key});
+
   @override
   _Task2ButtonPressState createState() => _Task2ButtonPressState();
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Task5FirstScreen extends StatelessWidget {
+  const Task5FirstScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,6 +35,8 @@ class Task5FirstScreen extends StatelessWidget {
 }
 
 class Task5SecondScreen extends StatelessWidget {
+  const Task5SecondScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

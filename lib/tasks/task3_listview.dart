@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Task3ListView extends StatelessWidget {
+  const Task3ListView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

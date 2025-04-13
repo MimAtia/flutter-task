@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Task1HelloWorld extends StatelessWidget {
+  const Task1HelloWorld({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

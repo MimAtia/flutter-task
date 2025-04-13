@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Task4TextStyles extends StatelessWidget {
+  const Task4TextStyles({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
