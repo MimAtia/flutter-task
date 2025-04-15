@@ -6,6 +6,7 @@ import 'tasks/task4_text_styles.dart';
 import 'tasks/task5_navigation.dart';
 import 'tasks/task6_login_screen.dart';
 import 'tasks/task7_image_grid.dart';
+import 'tasks/task8_navigation_drawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -98,6 +99,15 @@ class TaskSelectionScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Task7ImageGrid()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 8: Navigation Drawer'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task8NavigationDrawer()),
               );
             },
           ),
