@@ -8,6 +8,7 @@ import 'tasks/task6_login_screen.dart';
 import 'tasks/task7_image_grid.dart';
 import 'tasks/task8_navigation_drawer.dart';
 import 'tasks/task9_custom_card.dart';
+import 'tasks/task10_bottom_nav.dart';
 
 void main() {
   runApp(MyApp());
@@ -118,6 +119,15 @@ class TaskSelectionScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Task9CustomCard()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 10: Bottom Navigation'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task10BottomNav()),
               );
             },
           ),
