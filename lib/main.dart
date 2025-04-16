@@ -9,6 +9,15 @@ import 'tasks/task7_image_grid.dart';
 import 'tasks/task8_navigation_drawer.dart';
 import 'tasks/task9_custom_card.dart';
 import 'tasks/task10_bottom_nav.dart';
+import 'tasks/task11_asset_image.dart';
+import 'tasks/task12_styled_container.dart';
+import 'tasks/task13_custom_appbar.dart';
+import 'tasks/task14_swipeable_list.dart';
+import 'tasks/task15_date_time_picker.dart';
+import 'tasks/task16_animated_container.dart';
+import 'tasks/task17_settings_screen.dart';
+import 'tasks/task18_profile_image_picker.dart';
+import 'tasks/task19_animated_drawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -128,6 +137,87 @@ class TaskSelectionScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Task10BottomNav()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 11: Asset Image'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task11AssetImage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 12: Styled Container'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task12StyledContainer()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 13: Custom AppBar'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task13CustomAppbar()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 14: Swipeable List'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task14SwipeableList()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 15: Date Time Picker'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task15DateTimePicker()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 16: Animated Container'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task16AnimatedContainer()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 17: Settings Screen'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task17SettingsScreen()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 18: Profile Image Picker'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task18ProfileImagePicker()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Task 19: Animated Drawer'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Task19AnimatedDrawer()),
               );
             },
           ),
